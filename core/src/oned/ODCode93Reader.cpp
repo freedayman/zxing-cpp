@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <string.h>
+
 #include "oned/ODCode93Reader.h"
 #include "Result.h"
 #include "BitArray.h"
@@ -73,7 +75,7 @@ static int ToPattern(const CounterContainer& counters)
 	return pattern;
 }
 
-static BitArray::Range
+static BitArray::BitArrayRange
 FindAsteriskPattern(const BitArray& row)
 {
 	CounterContainer counters;

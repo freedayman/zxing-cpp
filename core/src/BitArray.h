@@ -94,7 +94,7 @@ public:
 	};
 
 	using ReverseIterator = std::reverse_iterator<Iterator>;
-	using Range = Range<Iterator>;
+	using BitArrayRange = Range<Iterator>;
 
 	BitArray() {}
 

@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <stdexcept>
+
 #include "oned/ODUPCAWriter.h"
 #include "oned/ODEAN13Writer.h"
 

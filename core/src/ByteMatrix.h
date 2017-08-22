@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 #include <vector>
+#include <cstring>
 #include <cstdint>
 
 namespace ZXing {

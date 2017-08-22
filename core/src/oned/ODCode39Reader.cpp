@@ -15,6 +15,9 @@
 * limitations under the License.
 */
 
+#include <string.h>
+#include <cstring>
+
 #include "oned/ODCode39Reader.h"
 #include "Result.h"
 #include "BitArray.h"
@@ -98,8 +101,7 @@ ToNarrowWidePattern(const CounterContainer& counters)
 	return -1;
 }
 
-static BitArray::Range
-FindAsteriskPattern(const BitArray& row)
+static BitArray::BitArrayRange FindAsteriskPattern(const BitArray& row)
 {
 	CounterContainer counters;
 

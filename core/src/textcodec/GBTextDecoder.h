@@ -33,6 +33,7 @@
 ****************************************************************************/
 
 #include <vector>
+#include <cstddef>
 #include <cstdint>
 
 class GBTextDecoder

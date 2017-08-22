@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <string.h>
+
 #include "oned/ODCode128Reader.h"
 #include "oned/ODCode128Patterns.h"
 #include "Result.h"
@@ -51,7 +53,7 @@ static const int CODE_START_B = 104;
 static const int CODE_START_C = 105;
 static const int CODE_STOP = 106;
 
-static BitArray::Range
+static BitArray::BitArrayRange
 FindStartPattern(const BitArray& row, int* startCode)
 {
 	assert(startCode != nullptr);

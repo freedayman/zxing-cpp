@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <cstring>
+
 #include "GenericLuminanceSource.h"
 #include "ByteArray.h"
 

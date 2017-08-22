@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <cstddef>
+
 #include "oned/ODWriterHelper.h"
 #include "BitMatrix.h"
 #include <algorithm>

@@ -68,7 +68,7 @@ struct RSS14DecodingState : public RowReader::DecodingState
 //	possibleRightPairs = new ArrayList<>();
 //}
 
-static BitArray::Range
+static BitArray::BitArrayRange
 FindFinderPattern(const BitArray& row, bool rightFinderPattern, FinderCounters& counters)
 {
 	return RowReader::FindPattern(
@@ -80,7 +80,7 @@ FindFinderPattern(const BitArray& row, bool rightFinderPattern, FinderCounters& 
 }
 
 static RSS::FinderPattern
-ParseFoundFinderPattern(const BitArray& row, int rowNumber, bool right, BitArray::Range range, FinderCounters& finderCounters)
+ParseFoundFinderPattern(const BitArray& row, int rowNumber, bool right, BitArray::BitArrayRange range, FinderCounters& finderCounters)
 {
 	if (!range || range.begin == row.begin())
 		return RSS::FinderPattern();

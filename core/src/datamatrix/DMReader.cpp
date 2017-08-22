@@ -59,6 +59,8 @@ ExtractPureBits(const BitMatrix& image, BitMatrix& outBits)
 	}
 
 	int moduleSize = GetModuleSize(left, top, image);
+	if (moduleSize <= 0)
+		return DecodeStatus::NotFound;
 	int matrixWidth = (right - left + 1) / moduleSize;
 	int matrixHeight = (bottom - top + 1) / moduleSize;
 	if (matrixWidth <= 0 || matrixHeight <= 0) {

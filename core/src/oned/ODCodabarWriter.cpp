@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <string.h>
+
 #include "oned/ODCodabarWriter.h"
 #include "oned/ODWriterHelper.h"
 #include "ZXContainerAlgorithms.h"

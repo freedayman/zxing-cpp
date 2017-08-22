@@ -168,7 +168,7 @@ static std::string DecodeMiddle(BitArray::Iterator begin, BitArray::Iterator end
 * @throws NotFoundException if pattern is not found
 */
 template <typename Container>
-static BitArray::Range
+static BitArray::BitArrayRange
 FindGuardPattern(const BitArray& row, const Container& pattern)
 {
 	Container counters;
@@ -202,7 +202,7 @@ FindGuardPattern(const BitArray& row, const Container& pattern)
 *         'start block'
 * @throws NotFoundException
 */
-static BitArray::Range DecodeStart(const BitArray& row)
+static BitArray::BitArrayRange DecodeStart(const BitArray& row)
 {
 	return FindGuardPattern(row, START_PATTERN);
 }
@@ -215,7 +215,7 @@ static BitArray::Range DecodeStart(const BitArray& row)
 *         block'
 * @throws NotFoundException
 */
-static BitArray::Range DecodeEnd(const BitArray& row)
+static BitArray::BitArrayRange DecodeEnd(const BitArray& row)
 {
 	BitArray revRow;
 	row.copyTo(revRow);

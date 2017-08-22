@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <cstring>
+
 #include "aztec/AZDecoder.h"
 #include "aztec/AZDetectorResult.h"
 #include "DecoderResult.h"

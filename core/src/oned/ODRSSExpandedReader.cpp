@@ -103,7 +103,7 @@ struct RSSExpandedDecodingState : public RowReader::DecodingState
 using namespace RSS;
 
 
-static BitArray::Range
+static BitArray::BitArrayRange
 FindNextPair(const BitArray& row, const std::list<ExpandedPair>& previousPairs, int forcedOffset, bool startFromEven, std::array<int, 4>& counters)
 {
 	int rowOffset;
@@ -138,7 +138,7 @@ FindNextPair(const BitArray& row, const std::list<ExpandedPair>& previousPairs, 
 }
 
 static FinderPattern
-ParseFoundFinderPattern(const BitArray& row, int rowNumber, bool oddPattern, BitArray::Range range, std::array<int, 4>& counters) {
+ParseFoundFinderPattern(const BitArray& row, int rowNumber, bool oddPattern, BitArray::BitArrayRange range, std::array<int, 4>& counters) {
 	// Actually we found elements 2-5.
 	int firstCounter;
 
@@ -661,7 +661,7 @@ DecodeRow2Pairs(int rowNumber, const BitArray& row, bool startFromEven, std::lis
 }
 
 /**
-* @author Pablo Orduña, University of Deusto (pablo.orduna@deusto.es)
+* @author Pablo Orduï¿½a, University of Deusto (pablo.orduna@deusto.es)
 * @author Eduardo Castillejo, University of Deusto (eduardo.castillejo@deusto.es)
 */
 static BitArray

@@ -62,6 +62,7 @@
  */
 
 #include <vector>
+#include <cstddef>
 #include <cstdint>
 
 class JPTextDecoder

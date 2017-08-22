@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include <cstddef>
 #include <cstdint>
 #include <cassert>
 #include <vector>

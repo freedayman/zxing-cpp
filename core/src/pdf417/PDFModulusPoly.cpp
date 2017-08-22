@@ -15,6 +15,8 @@
 * limitations under the License.
 */
 
+#include <algorithm>
+
 #include "pdf417/PDFModulusPoly.h"
 #include "pdf417/PDFModulusGF.h"
 
